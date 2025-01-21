@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+	<title>MyMerci - 건강한 내일을 위한 오늘의 노력</title>
+
+	<meta property="og:title" content="MyMerci - 건강한 내일을 위한 오늘의 노력" />
+	<meta property="og:url" content="https://mymerci.kr" />
+	<meta property="og:image" content="/resources/img/mmog.png" />
+	<meta property="og:image:alt" content="mymerci logo which symbolizes spiking graph" />
+	<meta property="og:description" content="MyMerci - 건강한 내일을 위한 오늘의 노력" />
+	
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:site" content="MyMerci - 건강한 내일을 위한 오늘의 노력" />
+	<meta property="twitter:title" content="MyMerci - 건강한 내일을 위한 오늘의 노력" />
+	<meta property="twitter:description" content="MyMerci - 건강한 내일을 위한 오늘의 노력" />
+	<meta property="twitter:image" content="/resources/img/mmog.png" />
+	<meta property="twitter:url" content="https://mymerci.kr" />
+	
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script src="./header.js"></script>
+    <script src="./tab-data.js"></script>
+</head>
+<body id="landing">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <!-- <img src="./img/logo.svg" alt=""> -->
+            </div>
+    
+            <div class="menu_wrap">
+                <div class="navi">
+                    <a href="#menu01">서비스소개</a>
+                    <a href="#menu02">사용방법</a>
+                    <a href="#menu03">업데이트</a>
+                    <a href="#menu04">고객지원</a>
+                </div>
+    
+                <div>
+                    <p>한국어</p>
+                </div>
+            </div>
+
+            <div class="pc_none mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main">
+      
+        <div class="video-background">
+            <video class="" autoplay muted loop>
+                <source src="./img/main_video.mp4" type="video/mp4" />
+                <source src="./img/main_video.webm" type="video/webm" />
+                Your browser is not supported!
+            </video>
+        </div>
+
+        <div class="main_contents" style="">
+            <div>
+                <h1>어디서든 <span id="slide_text">편리하니까,</span> <br class="pc_none">마이메르시</h1>
+                <p>건강한 내일을 위한 오늘의 노력</p>
+            </div>
+    
+            <div class="main_btn">
+                <span>
+                    <a>
+                        <img src="./img/main_btn01.png" alt="">
+                    </a>
+        
+                </span>
+    
+                <span>
+                    <a>
+                        <img src="./img/main_btn02.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu01" class="top_padding">
+        <div id="intro" class="base-box">
+            <div class="text_wrap">
+                <p class="gray_text">INTRO</p>
+                <p class="main_text">
+                    보건의료인을 위한<br>쉽고 편리한 학습방법,<br>어디 없을까?
+                </p>
+                <p class="description">
+                    마이메르시는 경험을 바탕으로<br>보건의료인의 학습 방법을 고민했습니다
+                </p>
+            </div>
+
+            <div class="swiper mySwiper card_wrap">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><img src="./img/intro_card_01.png" alt=""></li>
+                  <li class="swiper-slide"><img src="./img/intro_card_01.png" alt=""></li>
+                  <li class="swiper-slide"><img src="./img/intro_card_01.png" alt=""></li>
+                  <li class="swiper-slide"><img src="./img/intro_card_01.png" alt=""></li>
+                  <li class="swiper-slide"><img src="./img/intro_card_01.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                autoplay: true,
+                slidesPerView: 1.5, 
+                spaceBetween: 10, 
+                breakpoints: {
+                    768: { 
+                    slidesPerView: 1.5, 
+                    spaceBetween: 10, 
+                    },
+                },
+            });
+        </script>
+
+
+        <div id="study_icon" class="base-box">
+            <div class="text_wrap">
+                <p class="main_text">
+                  필요한 학습을 다양하게
+                </p>
+                <p class="description">
+                   마이메르시는 간호학, 물리치료학 등<br>과목별 필요학습을 다양하게 제공합니다
+                </p>
+            </div>
+
+            <div>
+                <div class="custom-select">
+                    <div class="select-box">
+                      <span class="selected">간호학</span>
+                      <span class="arrow">&#9660;</span>
+                    </div>
+                    <ul class="options">
+                      <li id="option-01">간호학</li>
+                      <li id="option-02">물리치료학</li>
+                      <li id="option-03">간호조무사</li>
+                    </ul>
+                </div>
+                <div class="image-display">
+                    <ul id="option-01-img">
+                        <li><img src="./img/select01.png" alt=""></li>
+                        <li><img src="./img/select02.png" alt=""></li>
+                        <li><img src="./img/select03.png" alt=""></li>
+                        <li><img src="./img/select04.png" alt=""></li>
+                        <li><img src="./img/select05.png" alt=""></li>
+                        <li><img src="./img/select06.png" alt=""></li>
+                    </ul>
+                    
+                    <ul id="option-02-img">
+                        <li><img src="./img/select01.png" alt=""></li>
+                        <li><img src="./img/select02.png" alt=""></li>
+                        <li><img src="./img/select03.png" alt=""></li>
+                        <li><img src="./img/select04.png" alt=""></li>
+                        <li><img src="./img/select05.png" alt=""></li>
+                    </ul>
+
+                    <ul id="option-03-img">
+                        <li><img src="./img/select01.png" alt=""></li>
+                        <li><img src="./img/select02.png" alt=""></li>
+                        <li><img src="./img/select03.png" alt=""></li>
+                        <li><img src="./img/select04.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="review_wrap"  class="base-box">
+            <div class="text_wrap">
+                <p class="main_text">
+                  보건의료인을 위한 마이메르시는<br> <span>123,837명</span>의 선생님과 함께합니다
+                </p>
+                <ul class="text_tag">
+                    <li>언제어디서나</li>
+                    <li>방대한 문제 DB</li>
+                    <li>빠르고 가볍게</li>
+                </ul>
+            </div>
+
+            <div>
+  
+            </div>
+        </div>
+
+        <div id="logo_wrap" class="max-width">
+           <img src="./img/logo.png" alt="">
+        </div>
+
+        <div id="status_wrap" class="base-box">
+            <ul>
+                <li>
+                    <span><img src="./img/status_01.png" alt=""></span>
+                    <div>
+                        <p>교육 카테고리</p>
+                        <h3><span>1</span>위</h3>
+                        <span>(2024.06기준)</span>
+                    </div>
+                </li>
+
+                <li>
+                    <span><img src="./img/status_02.png" alt=""></span>
+                    <div>
+                        <p>누적 앱 설치</p>
+                        <h3><span>600</span>만+</h3>
+                        <span>(2024.06기준)</span>
+                    </div>
+                </li>
+
+                <li>
+                    <span><img src="./img/status_03.png" alt=""></span>
+                    <div>
+                        <p>스토어 평점</p>
+                        <h3><span>4.8</span>점+</h3>
+                        <span>(2024.06기준)</span>
+                    </div>
+                </li>
+
+                <li>
+                    <span><img src="./img/status_04.png" alt=""></span>
+                    <div>
+                        <p>누적 리뷰 수</p>
+                        <h3><span>10</span>만+</h3>
+                        <span>(2024.06기준)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="menu02" class="top_padding">
+        <div class="back_gradation base-box">
+            <div class="text_wrap">
+                <p class="description">
+                    마이메르시는 다양하게 지원합니다
+                 </p>
+                <p class="main_text">
+                    마이메르시,<br><span>모든 기기</span>에서 더 가볍게
+                </p>
+                <ul class="text_tag">
+                    <li>PC/WEB</li>
+                    <li>TABLET</li>
+                    <li>MOBILE</li>
+                </ul>
+            </div>
+
+            <div class="max-width">
+                <img src="./img/tablet.png" alt="">
+            </div>
+        </div>
+
+        <div class="back100 servbox" data-index="1">
+            <div class="service_01 sm-width">
+                <div class="text_wrap box1">
+                    <div>
+                        <p class="gray_text">이론학습</p>
+                        <p class="main_text">
+                            맞춤형 지식,<br>
+                            <span>학과 별 이론학습</span>
+                        </p>
+                    </div>
+    
+                    <ul class="text_tag">
+                        <li class="sev00_menu">이론학습</li>
+                        <li class="sev01_menu">관련문제</li>
+                        <li class="sev02_menu">하이라이터</li>
+                    </ul>
+                </div>
+    
+                <div class="contents_gif box2">
+                    <img src="./img/phone-1.gif" alt="">
+                </div>
+    
+                <div class="text_wrap box4">
+                    <p class="description changedes" >
+                        학과 관련 이론학습 분류와 학습 중 필기 한 내용을 카테고리 영역에서 한눈에 확인할 수 있어요
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="backfafa servbox" data-index="2">
+            <div class="service_01 sm-width" >
+                <div class="text_wrap nbox1">
+                    <div>
+                        <p class="gray_text">문제풀기</p>
+                        <p class="main_text">
+                            다양한 유형의,<br>
+                            <span>문제를 자유롭게</span>
+                        </p>
+                    </div>
+    
+                    <ul class="text_tag">
+                        <li class="sev00_menu">문제풀기</li>
+                        <li class="sev03_menu">문제해설</li>
+                        <li class="sev04_menu">복습하기</li>
+                    </ul>
+                </div>
+    
+                <div class="contents_gif nbox2">
+                    <img src="./img/phone-1.gif" alt="">
+                </div>
+    
+                <div class="text_wrap nbox4">
+                    <p class="description changedes">
+                        실제 시험과 유사한 문제 난이도와 다양한 유형의 문제들을 원하는 만큼 설정하여 풀어볼 수 있어요
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back100 servbox" data-index="3">
+            <div class="service_01 sm-width">
+                <div class="text_wrap box1">
+                    <div>
+                        <p class="gray_text">추가기능</p>
+                        <p class="main_text">
+                            학습을 더 편하게,<br>
+                            <span>마이메르시 추가기능</span>
+                        </p>
+                    </div>
+    
+                    <ul class="text_tag">
+                        <li class="sev00_menu">마이노트</li>
+                        <li class="sev05_menu">검색하기</li>
+                        <li class="sev06_menu">커뮤니티</li>
+                    </ul>
+                </div>
+    
+                <div class="contents_gif box2">
+                    <img src="./img/phone.png" alt="">
+                </div>
+    
+                <div class="text_wrap box4">
+                    <p class="description changedes">
+                        마이노트에서 분류별로 폴더를 관리하고 학습 중 필요내용들을 세부적으로 저장하여 관리하세요
+                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="add_service base-box sm-width">
+            <div class="text_wrap">
+                <p class="main_text">
+                    같이 쓰면 더 좋은 기능
+                </p>
+            </div>
+            <div class="add_card">
+                <div><img src="./img/service_card1.png" alt=""></div>
+                <div><img src="./img/service_card2.png" alt=""></div>
+                <div><img src="./img/service_card3.png" alt=""></div>
+                <div><img src="./img/service_card4.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+            $('#sev01_menu').click(function() {
+            // 이미지 변경
+            // $('#contentsgif img').attr('src', 'image2.jpg');
+            
+            // 텍스트 변경
+            $('.text_wrap p').text('This is the new text.');
+            });
+    </script>
+</body>
+</html>
