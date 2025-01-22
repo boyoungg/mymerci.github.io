@@ -466,6 +466,7 @@ video {
 
 @media (max-width: 480px) {
 
+    .box4.text_wrap .description{width: 80%; }
 
 
 }
